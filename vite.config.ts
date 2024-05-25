@@ -7,7 +7,6 @@ import VueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/zebra_t_t/',
   plugins: [
     vue(),
     vueJsx(),
