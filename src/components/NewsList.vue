@@ -58,8 +58,9 @@ onMounted(() => {
 
 .news-list__items {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(536px, 1fr));
-  grid-gap: 44px 34px;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  grid-gap: 22px;
   max-width: 1710px;
 }
 
@@ -67,9 +68,24 @@ onMounted(() => {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
+  background-color: #fff;
+  color: #007bff;
+  border: 1px solid #007bff;
   border-radius: 4px;
+}
+
+/* Media queries */
+
+@media (min-width: 768px) {
+  .news-list__items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 22px 17px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .news-list__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 </style>

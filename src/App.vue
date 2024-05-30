@@ -25,4 +25,15 @@ import Footer from '@/components/Footer.vue'
   justify-content: space-between;
   align-items: center;
 }
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+footer {
+  background: #f0f6fe;
+}
 </style>

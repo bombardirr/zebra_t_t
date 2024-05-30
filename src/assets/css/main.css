@@ -2,9 +2,14 @@
 
 #app {
     font-weight: 400;
-    font-family: "Nunito Sans", Arial;
+    font-family: "Nunito Sans", Arial, sans-serif;
 }
 
 * {
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
